@@ -3,10 +3,10 @@ const displayAns = document.getElementById("ans");
 
 element.addEventListener("click", () => {
   let getAlice = document.getElementById("aliceKey").value;
-  let p = 17,
-    g = 5;
+  let p = 23,
+    g = 9;
   let xa = getAlice,
-    xb = 6;
+    xb = 3;
   let ya = Math.pow(g, xa) % p;
   let yb = Math.pow(g, xb) % p;
   let ybx = Math.pow(yb, xa) % p;
