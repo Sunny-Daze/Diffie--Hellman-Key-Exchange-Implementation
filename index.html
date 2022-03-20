@@ -22,56 +22,78 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid my-3 customBg">
       <div class="row description">
         <div class="col">
           <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
-            <b>Diffie-Hellman Key Exchange machanism using HTML and JavaScript. Consider the end user as one of the parties (Alice) and the JavaScript application as the other party (Bob).</b>
+              <h5>
+                Diffie-Hellman Key Exchange machanism using HTML and JavaSript.
+                <br />
+                Consider the end user as one of the parties (Alice) and the
+                JavaScript application as the other party (Bob).
+              </h5>
             </div>
             <div class="col-lg-2"></div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-12">
+        <div class="col-lg-3 col-md-12 my-4">
           <div class="panel-1">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Enter the private key for Alice</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="aliceKey"
-                placeholder="Enter the key"
-              />
+            <div class="userInput">
+              <div class="mb-3 text-center">
+                <div class="alice">
+                  <img src="./Images/Alice.png" alt="" />
+                </div>
+                <h5>
+                  <label for="aliceKey" class="form-label"
+                    >Enter the private key for Alice</label
+                  >
+                </h5>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="aliceKey"
+                  placeholder="Enter the key"
+                />
+              </div>
+              <center>
+                <button class="btn btn-success" id="calculate">
+                  Calculate
+                </button>
+                <p class="my-2" id="tempAns"></p>
+              </center>
             </div>
-            <button class="btn btn-primary" id="calculate">Calculate</button>
           </div>
         </div>
-        <div class="col-lg-9 col-md-12">
+        <div class="col-lg-9 col-md-12 my-10">
           <div class="panel-2">
-            <div id="ans">
-             
+            <div class="displayAns" id="ans">
+              <div class="displayWarning">
+                <div class="alert alert-primary text-center my-5" role="alert">
+                  <h5>
+                    Enter the private key of Alice to calculate the value of
+                    secret key.
+                  </h5>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <footer
+    <footer
       class="text-center text-white fixed-bottom"
-      style="background-color: #21081a"
+      style="background-color: #212529"
     >
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MDBootstrap.com
-        </a>
+        © 2022 Copyright:
+        <span>Shani Yadav 59</sp>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./index.js"></script>
     <script

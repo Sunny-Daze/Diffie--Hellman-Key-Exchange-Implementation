@@ -1,19 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* .description {
-} */
-
 .panel-1 {
-    height: 75vh;
+  height: 58vh;
 }
 
 .panel-2 {
-    height: 75vh;
+  height: 58vh;
+  margin-bottom: 38rem;
+  font-size: medium;
 }
 
+.displayAns {
+  height: 100%;
+  width: 100%;
+}
 
-
+.displayWarning {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
